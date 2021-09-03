@@ -461,21 +461,29 @@ b {
 .h5,
 .h6 {
   font-family: YesevaOne;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .h2 {
-  font-size: 36px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 40px;
   line-height: 24px;
   color: #c90;
+  letter-spacing: 1.5px;
 }
 
 .h2::after {
+  text-align: center;
   content: "";
   display: block;
   width: 247px;
-  height: auto;
-  background: url("../img/div_md_yellow.png") center/cover no-repeat;
+  height: 24px;
+  background: url("../img/div_md_yellow.png") 0 0/100% auto no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  margin-bottom: 30px;
 }
 
 .h2--light {
@@ -810,6 +818,32 @@ b {
 
 .hero-body__button--light:hover {
   background-color: rgba(85, 85, 85, 0.5);
+}
+
+.about {
+  padding-top: 55px;
+  padding-bottom: 100px;
+}
+
+.about-body {
+  padding-top: 52px;
+  text-align: center;
+}
+
+.about-body__text {
+  max-width: 410px;
+  padding-bottom: 50px;
+}
+
+.about-body__image {
+  width: 219px;
+  height: 221px;
+}
+
+.about-side__image {
+  display: block;
+  width: 621px;
+  height: auto;
 }
 
 @media (min-width: 1170px) {
