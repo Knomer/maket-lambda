@@ -465,6 +465,7 @@ b {
 }
 
 .h2 {
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
   font-size: calc(20px + 20 * ((100vw - 320px) / 850));
@@ -489,8 +490,16 @@ b {
   color: #fff;
 }
 
+.h2--light::after {
+  background: url("../img/div_md_white.png") 0 0/100% auto no-repeat;
+}
+
 .h2--dark {
   color: #c90;
+}
+
+.h2--dark::after {
+  background: url("../img/div_md_yellow.png") 0 0/100% auto no-repeat;
 }
 
 .h3 {
@@ -504,6 +513,13 @@ b {
 
 .h3--dark {
   color: #c89f2d;
+}
+
+.txt,
+.txt1,
+.txt2,
+.txt3 {
+  color: #4c4c4c;
 }
 
 .txt--light,
@@ -521,7 +537,6 @@ b {
 }
 
 .txt {
-  color: #4c4c4c;
   font-family: Lato;
   font-size: 16px;
   font-weight: 400;
@@ -822,6 +837,7 @@ b {
 .about {
   padding-top: calc(30px + 25 * ((100vw - 320px) / 850));
   padding-bottom: calc(30px + 10 * ((100vw - 320px) / 850));
+  background: url("../img/bg.svg");
 }
 
 .about-body {
@@ -843,6 +859,58 @@ b {
 .about-side__image {
   max-width: 100%;
   height: auto;
+}
+
+.ingridient {
+  padding-top: calc(30px + 70 * ((100vw - 320px) / 850));
+  padding-bottom: calc(30px + 70 * ((100vw - 320px) / 850));
+  background: url("../img/ingridient_bg.jpg") center/cover no-repeat;
+}
+
+.ingridient-box {
+  max-width: 570px;
+  padding-left: calc(15px + 65 * ((100vw - 320px) / 280));
+  padding-right: calc(15px + 65 * ((100vw - 320px) / 280));
+  padding-top: calc(30px + 40 * ((100vw - 320px) / 280));
+  padding-bottom: calc(30px + 30 * ((100vw - 320px) / 280));
+  opacity: 0.67;
+  background-color: #000;
+}
+
+.ingridient-box__text {
+  margin-bottom: calc(30px + 40 * ((100vw - 320px) / 280));
+  text-align: center;
+}
+
+.ingridient-box__image-box:not(:last-child) {
+  margin-right: 37px;
+}
+
+.ingridient-box__image {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 600px) {
+  .ingridient-box {
+    padding-left: 80px;
+  }
+
+  .ingridient-box {
+    padding-right: 80px;
+  }
+
+  .ingridient-box {
+    padding-top: 70px;
+  }
+
+  .ingridient-box {
+    padding-bottom: 60px;
+  }
+
+  .ingridient-box__text {
+    margin-bottom: 70px;
+  }
 }
 
 @media (min-width: 1170px) {
@@ -904,6 +972,14 @@ b {
 
   .about-body__text {
     padding-bottom: 50px;
+  }
+
+  .ingridient {
+    padding-top: 100px;
+  }
+
+  .ingridient {
+    padding-bottom: 100px;
   }
 }
 
@@ -1004,5 +1080,33 @@ b {
 
   .about-body__text {
     padding-bottom: 30px;
+  }
+
+  .ingridient {
+    padding-top: 30px;
+  }
+
+  .ingridient {
+    padding-bottom: 30px;
+  }
+
+  .ingridient-box {
+    padding-left: 15px;
+  }
+
+  .ingridient-box {
+    padding-right: 15px;
+  }
+
+  .ingridient-box {
+    padding-top: 30px;
+  }
+
+  .ingridient-box {
+    padding-bottom: 30px;
+  }
+
+  .ingridient-box__text {
+    margin-bottom: 30px;
   }
 }
