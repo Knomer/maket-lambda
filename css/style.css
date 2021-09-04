@@ -891,6 +891,40 @@ b {
   height: auto;
 }
 
+.review {
+  padding-top: calc(30px + 70 * ((100vw - 320px) / 850));
+  padding-bottom: calc(30px + 70 * ((100vw - 320px) / 850));
+  background: url("../img/review_bg.jpg") center/cover no-repeat;
+}
+
+.review-box {
+  max-width: 770px;
+  margin: 0 auto;
+  padding-left: calc(15px + 65 * ((100vw - 320px) / 280));
+  padding-right: calc(15px + 65 * ((100vw - 320px) / 280));
+  padding-top: calc(30px + 40 * ((100vw - 320px) / 280));
+  padding-bottom: calc(30px + 30 * ((100vw - 320px) / 280));
+  opacity: 0.67;
+  background-color: #000;
+}
+
+.review-box__quote {
+  margin-bottom: calc(20px + 30 * ((100vw - 320px) / 850));
+  color: #dde0df;
+  font-family: "Gentium Book Basic";
+  font-size: 25px;
+  font-size: calc(18px + 7 * ((100vw - 320px) / 280));
+  font-weight: 700;
+}
+
+.review-box__author {
+  color: #fff;
+  font-family: Lato;
+  font-size: 18px;
+  font-size: calc(16px + 2 * ((100vw - 320px) / 280));
+  font-weight: 400;
+}
+
 @media (min-width: 600px) {
   .ingridient-box {
     padding-left: 80px;
@@ -910,6 +944,30 @@ b {
 
   .ingridient-box__text {
     margin-bottom: 70px;
+  }
+
+  .review-box {
+    padding-left: 80px;
+  }
+
+  .review-box {
+    padding-right: 80px;
+  }
+
+  .review-box {
+    padding-top: 70px;
+  }
+
+  .review-box {
+    padding-bottom: 60px;
+  }
+
+  .review-box__quote {
+    font-size: 25px;
+  }
+
+  .review-box__author {
+    font-size: 18px;
   }
 }
 
@@ -981,6 +1039,18 @@ b {
   .ingridient {
     padding-bottom: 100px;
   }
+
+  .review {
+    padding-top: 100px;
+  }
+
+  .review {
+    padding-bottom: 100px;
+  }
+
+  .review-box__quote {
+    margin-bottom: 50px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -1015,6 +1085,10 @@ b {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+  }
+
+  .ingridient-box {
+    margin: 0 auto;
   }
 }
 
@@ -1108,5 +1182,41 @@ b {
 
   .ingridient-box__text {
     margin-bottom: 30px;
+  }
+
+  .review {
+    padding-top: 30px;
+  }
+
+  .review {
+    padding-bottom: 30px;
+  }
+
+  .review-box {
+    padding-left: 15px;
+  }
+
+  .review-box {
+    padding-right: 15px;
+  }
+
+  .review-box {
+    padding-top: 30px;
+  }
+
+  .review-box {
+    padding-bottom: 30px;
+  }
+
+  .review-box__quote {
+    margin-bottom: 20px;
+  }
+
+  .review-box__quote {
+    font-size: 18px;
+  }
+
+  .review-box__author {
+    font-size: 16px;
   }
 }
